@@ -60,7 +60,7 @@ export function MediaSection() {
           <h3 className="text-center font-serif text-xl font-bold text-foreground">
             Press Coverage
           </h3>
-          <div className="mx-auto mt-8 max-w-2xl">
+          <div className="mx-auto mt-8 max-w-2xl flex flex-col gap-4">
             <a
               href="https://sfstandard.com/2024/10/05/plasma-exchange-longevity-treatment/"
               target="_blank"
@@ -81,6 +81,54 @@ export function MediaSection() {
                   An in-depth look at Dr. {"Kiprov's"} pioneering work in therapeutic
                   plasma exchange and its implications for longevity and
                   age-related disease.
+                </p>
+              </div>
+              <ExternalLink className="mt-1 h-4 w-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors" />
+            </a>
+            <a
+              href="https://www.krqe.com/business/press-releases/ein-presswire/825390972/human-study-reveals-therapeutic-plasma-exchange-tpe-reverses-biological-aging/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start gap-4 rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary">
+                <span className="font-serif text-sm font-bold text-primary">KRQE</span>
+              </div>
+              <div className="flex-1">
+                <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                  KRQE News / EIN Presswire
+                </p>
+                <h4 className="mt-1 text-base font-semibold text-card-foreground group-hover:text-accent transition-colors">
+                  Human Study Reveals Therapeutic Plasma Exchange (TPE) Reverses Biological Aging
+                </h4>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Press release covering the landmark clinical study demonstrating
+                  that therapeutic plasma exchange can reverse biological aging markers
+                  in human subjects.
+                </p>
+              </div>
+              <ExternalLink className="mt-1 h-4 w-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors" />
+            </a>
+            <a
+              href="https://www.tallahassee.com/press-release/story/25771/kaplan-center-to-offer-outpatient-therapeutic-plasma-exchange-tpe-to-treat-chronic-illness-cognitive-health-and-aging/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start gap-4 rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary">
+                <span className="font-serif text-sm font-bold text-primary">KC</span>
+              </div>
+              <div className="flex-1">
+                <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                  Tallahassee Democrat / Kaplan Center
+                </p>
+                <h4 className="mt-1 text-base font-semibold text-card-foreground group-hover:text-accent transition-colors">
+                  Kaplan Center to Offer Outpatient Therapeutic Plasma Exchange (TPE) to Treat Chronic Illness, Cognitive Health and Aging
+                </h4>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  The Kaplan Center announces outpatient TPE services for patients with
+                  chronic illness, cognitive decline, and age-related conditions, expanding
+                  access to this evidence-based therapy.
                 </p>
               </div>
               <ExternalLink className="mt-1 h-4 w-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors" />
