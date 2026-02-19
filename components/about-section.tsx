@@ -177,7 +177,7 @@ export function AboutSection() {
               </h4>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 First to publish on the effect of Therapeutic Plasma Exchange on
-                Aging, Long COVID, and the first placebo-controlled trial of TPE
+                Aging, Long COVID, and the first placebo-controlled trial of TPE{" "}
                 {"in Alzheimer's disease."}
               </p>
             </div>
