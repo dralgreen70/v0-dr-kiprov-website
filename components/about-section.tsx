@@ -53,10 +53,16 @@ export function AboutSection() {
               <p>
                 Dr. Kiprov has worked in the field of Therapeutic Apheresis for
                 more than 40 years and has published extensively on the subject.
-                He served two terms on the American Society for Apheresis (ASFA)
-                Board of Directors and created the first ASFA educational video
-                program. He is the recipient of the ASFA Presidential Award, the
-                ASFA Lecturers Award, and the Francis Morrison Memorial Award.
+                He completed fellowship training in Clinical Immunology and
+                Immunopathology at Massachusetts General Hospital and Harvard
+                Medical School (NIH-sponsored) and became the first physician in
+                the United States to pass the Hemapheresis Practitioner Exam
+                (ASCP). He served two terms on the American Society for
+                Apheresis (ASFA) Board of Directors and created the first ASFA
+                educational video program. He is the recipient of three major
+                ASFA honors: the Presidential Award for pioneering work and
+                numerous contributions to the field, the Lecturers Award, and
+                the Francis Morrison Memorial Award.
               </p>
             </div>
 
@@ -178,7 +184,9 @@ export function AboutSection() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 First to publish on the effect of Therapeutic Plasma Exchange on
                 Aging, Long COVID, and the first placebo-controlled trial of TPE{" "}
-                {"in Alzheimer's disease."}
+                {"in Alzheimer's disease."} He has also been involved in
+                pioneering immunotherapy trials, including early CAR-T cell
+                therapy research.
               </p>
             </div>
           </div>
