@@ -15,9 +15,12 @@ export function HeroSection() {
               40 Years of Published Research in Therapeutic Plasma Exchange
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-primary-foreground/80 lg:text-xl text-pretty">
-              The pioneer who proved therapeutic plasma exchange treats
-              age-related disease. Former President of the American Society for
-              Apheresis. 100+ peer-reviewed publications.
+              The pioneer who proved therapeutic plasma exchange can reverse
+              biological age and slow disease progression. Former President of
+              the American Society for Apheresis and author of 100+
+              peer-reviewed publications. His research has established the
+              protocols and trained most physicians practicing therapeutic
+              apheresis today.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
