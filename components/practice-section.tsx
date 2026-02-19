@@ -36,33 +36,36 @@ const services = [
 
 export function PracticeSection() {
   return (
-    <section id="practice" className="bg-primary py-24 lg:py-32">
+    <section id="practice" className="bg-primary py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          <p className="text-base font-bold uppercase tracking-[0.2em] text-accent">
             Global Apheresis
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl text-balance">
-            Where Science Meets Clinical Practice
+          <h2 className="mt-4 font-serif text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl text-balance">
+            {"Access Dr. Kiprov's Protocols"}
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-primary-foreground/75">
-            Founded by Dr. Kiprov, Global Apheresis delivers therapeutic plasma
-            exchange based on 40 years of published research. Every protocol is
-            grounded in peer-reviewed evidence.
+          <p className="mt-8 text-lg leading-relaxed text-primary-foreground/75 max-w-2xl mx-auto">
+            Founded by Dr. Kiprov, Global Apheresis is where his 40 years of
+            published research becomes accessible treatment. Every protocol is
+            grounded in peer-reviewed evidence and delivered by physicians
+            trained in his methods.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 p-6"
+              className="rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 p-8"
             >
-              <service.icon className="h-8 w-8 text-accent" />
-              <h3 className="mt-4 font-serif text-lg font-semibold text-primary-foreground">
+              <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-accent/15">
+                <service.icon className="h-7 w-7 text-accent" />
+              </div>
+              <h3 className="mt-5 font-serif text-xl font-semibold text-primary-foreground">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-primary-foreground/70">
+              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/70">
                 {service.description}
               </p>
             </div>
