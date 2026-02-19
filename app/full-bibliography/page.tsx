@@ -224,14 +224,18 @@ export default function FullBibliographyPage() {
               Complete Bibliography
             </h1>
             <p className="mt-3 text-lg leading-relaxed text-muted-foreground max-w-2xl">
-              Over 100 peer-reviewed publications spanning four decades of
-              advancing therapeutic apheresis medicine and preventative care.
+              Over 100 peer-reviewed publications, abstracts, and scholarly
+              works spanning four decades of advancing therapeutic apheresis
+              medicine and preventative care.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground/80 max-w-2xl">
               {"Dr. Kiprov's"} research spans biological aging, {"Alzheimer's"}{" "}
-              disease, autoimmune conditions, and the fundamental science of
-              therapeutic plasma exchange. This comprehensive list represents a
-              career dedicated to evidence-based medicine.
+              disease, autoimmune conditions, fertility, and the fundamental
+              science of therapeutic plasma exchange. This page features his most
+              significant peer-reviewed publications from a career spanning over
+              100 scholarly works. For a complete CV including all publications,
+              abstracts, conference proceedings, and book chapters, please
+              contact us below.
             </p>
           </div>
         </section>
