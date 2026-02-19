@@ -1,97 +1,36 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, ChevronUp, FileText } from "lucide-react"
+import { ChevronDown, ChevronUp, FileText, ExternalLink } from "lucide-react"
+import { publications, type Publication } from "@/lib/publications-data"
 
-type Publication = {
-  citation: string
-  note?: string
+const HOMEPAGE_CATEGORIES = [
+  "Biological Aging & Longevity",
+  "Alzheimer's Disease & Neurodegeneration",
+  "COVID-19 & Post-Acute Sequelae",
+  "Autoimmune & Immunological Conditions",
+] as const
+
+function groupByCategory(pubs: Publication[]) {
+  const grouped: Record<string, Publication[]> = {}
+  for (const cat of HOMEPAGE_CATEGORIES) {
+    grouped[cat] = pubs
+      .filter((p) => p.category === cat)
+      .sort((a, b) => b.year - a.year)
+  }
+  return grouped
 }
 
-type Category = {
-  name: string
-  publications: Publication[]
-}
+const categoryGroups = groupByCategory(publications)
 
-const categories: Category[] = [
-  {
-    name: "Biological Aging",
-    publications: [
-      {
-        citation:
-          'Kiprov D, "Intermittent Heterochronic Plasma Exchange as a Modality for Delaying Cellular Senescence \u2013 A Hypothesis." J Clin Apheresis 28:387-389 (2013)',
-        note: "First hypothesis paper on TPE and aging",
-      },
-      {
-        citation:
-          "Mehdipour M, Skinner C, Wong N, Lieb M, Liu C, Etienne J, Kato C, Kiprov D, Conboy MJ, Conboy IM. Rejuvenation of three germ layers tissues by exchanging old blood plasma with saline-albumin. Aging (Albany NY). 12, 8790\u20138819 (2020).",
-        note: "Landmark parabiosis-to-human translation",
-      },
-      {
-        citation:
-          "Kim D, Kiprov DD, Luellen C, et al. Old plasma dilution reduces human biological age: a clinical study. GeroScience 44, 2701\u20132720 (2022). doi:10.1007/s11357-022-00645-w",
-        note: "First proof TPE reduces biological age",
-      },
-      {
-        citation:
-          "Fuentealba M, Kiprov D, Schneider K, Mu WC, Kumaar PA, Kasler H, Burton JB, Watson M, Halaweh H, King CD, Y\u00FCksel ZS, Roska-Pamaong C, Schilling B, Verdin E, Furman D. Multi-Omics Analysis Reveals Biomarkers That Contribute to Biological Age Rejuvenation in Response to Single-Blinded Randomized Placebo-Controlled Therapeutic Plasma Exchange. Aging Cell. 2025 Aug;24(8):e70103. doi:10.1111/acel.70103.",
-        note: "Buck Institute partnership \u2013 placebo-controlled RCT",
-      },
-    ],
-  },
-  {
-    name: "Alzheimer's Disease",
-    publications: [
-      {
-        citation:
-          "Boada M, Lopez O, Nunez L, Olazaran J, Pfeffer M, Paricio M, Lorites J, Pinol G, Gamez J, Anaya F, Ortiz P, Kiprov D, Grifols C, Torres M, Costa M, Bozzo J, Szczepiorkowski Z, Hendrix S, Paez A. A Randomized Controlled Clinical Trial of Plasma Exchange with Albumin replacement for Alzheimer's Disease: Primary Results of the AMBAR Study. Alzheimer's and Dementia: June 4, 2020. DOI:10.1002/alz.12137",
-        note: "52-71% slowing of disease progression",
-      },
-    ],
-  },
-  {
-    name: "COVID-19",
-    publications: [
-      {
-        citation:
-          "Kiprov D, Conboy MJ, Conboy IM. Immunomodulation for the management of corona virus disease (COVID-19). Transfus. Apher. Sci. 59, 102856 (2020).",
-      },
-      {
-        citation:
-          "Kiprov DD, Herskowitz A, Kim D, Lieb M, Liu C, Watanabe E, Hoffman JC, Rohe R, Conboy MJ, Conboy IM. Case Report: Therapeutic and immunomodulatory effects of plasmapheresis in long-haul COVID. F1000Res. 2021 Nov 24;10:1189. doi:10.12688/f1000research.74534.2. PMID: 35464182.",
-        note: "First publication on TPE for Long COVID",
-      },
-    ],
-  },
-  {
-    name: "Autoimmune & Immunological Conditions",
-    publications: [
-      {
-        citation:
-          "Kiprov D, Morand P. The effect of plasmapheresis and immunosuppressive drug therapy on T-cell subsets as defined by monoclonal antibodies. J Clin Aphere 1-57, 1983.",
-        note: "First recognition that plasmapheresis affects cellular immunity",
-      },
-      {
-        citation:
-          "Kiprov D, Anderson RE, Morand P, Simpson D, Chermann JC, Levy J, Moss A. Antilymphocyte antibodies and seropositivity for retroviruses in high risk groups for AIDS. N Engl J Med 312:1517, 1985.",
-        note: "First recognition of anti-lymphocyte factors in HIV",
-      },
-      {
-        citation:
-          "Kiprov D, Miller R. Polymyositis associated with benign monoclonal gammopathy. Lancet II:1183-1186, 1984.",
-        note: "First description of new immunologically-mediated muscle syndrome",
-      },
-      {
-        citation:
-          "Kiprov DD, Golden P, Rohe R, Smith S, Hofmann J, Hunnicutt J. Adverse Reactions Associated with Mobile Therapeutic Apheresis: Analysis of 17,940 Procedures. J Clin Apheresis 16:130-133, 2001.",
-        note: "Most comprehensive safety study in therapeutic apheresis",
-      },
-    ],
-  },
-]
+function formatCitation(pub: Publication) {
+  return `${pub.authors}. ${pub.title}. ${pub.journal}.`
+}
 
 export function PublicationsSection() {
-  const [expanded, setExpanded] = useState<string | null>("Biological Aging")
+  const [expanded, setExpanded] = useState<string | null>(
+    "Biological Aging & Longevity"
+  )
 
   return (
     <section id="publications" className="bg-secondary py-24 lg:py-32">
@@ -104,34 +43,33 @@ export function PublicationsSection() {
             Peer-Reviewed Research
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            A curated selection from over 100 peer-reviewed publications spanning
-            four decades.
+            Key publications from over 100 peer-reviewed works spanning four
+            decades of advancing therapeutic apheresis medicine.
           </p>
         </div>
 
         <div className="mt-12 space-y-4">
-          {categories.map((category) => {
-            const isOpen = expanded === category.name
+          {HOMEPAGE_CATEGORIES.map((category) => {
+            const pubs = categoryGroups[category]
+            const isOpen = expanded === category
             return (
               <div
-                key={category.name}
+                key={category}
                 className="rounded-xl border border-border bg-card overflow-hidden"
               >
                 <button
                   type="button"
-                  onClick={() =>
-                    setExpanded(isOpen ? null : category.name)
-                  }
+                  onClick={() => setExpanded(isOpen ? null : category)}
                   className="flex w-full items-center justify-between px-6 py-5 text-left"
                   aria-expanded={isOpen}
                 >
                   <div className="flex items-center gap-3">
                     <FileText className="h-5 w-5 text-accent" />
                     <span className="font-serif text-lg font-semibold text-card-foreground">
-                      {category.name}
+                      {category}
                     </span>
                     <span className="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
-                      {category.publications.length}
+                      {pubs.length}
                     </span>
                   </div>
                   {isOpen ? (
@@ -144,7 +82,7 @@ export function PublicationsSection() {
                 {isOpen && (
                   <div className="border-t border-border px-6 pb-6 pt-4">
                     <div className="space-y-6">
-                      {category.publications.map((pub, idx) => (
+                      {pubs.map((pub, idx) => (
                         <div key={idx} className="flex gap-4">
                           <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-semibold text-accent">
                             {idx + 1}
@@ -156,8 +94,19 @@ export function PublicationsSection() {
                               </span>
                             )}
                             <p className="text-sm leading-relaxed text-muted-foreground">
-                              {pub.citation}
+                              {formatCitation(pub)}
                             </p>
+                            {pub.doi && (
+                              <a
+                                href={`https://doi.org/${pub.doi}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-accent hover:underline"
+                              >
+                                DOI: {pub.doi}
+                                <ExternalLink className="h-3 w-3" />
+                              </a>
+                            )}
                           </div>
                         </div>
                       ))}
