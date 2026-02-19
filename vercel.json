@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/publications",
+      "destination": "/full-bibliography",
+      "permanent": true
+    },
+    {
+      "source": "/business",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/#media",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": true
+    }
+  ]
+}
