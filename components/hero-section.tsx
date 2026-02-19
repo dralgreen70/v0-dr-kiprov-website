@@ -39,26 +39,7 @@ export function HeroSection() {
               </a>
             </div>
 
-            {/* Credibility markers */}
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 lg:justify-start">
-              {[
-                "ASFA President",
-                "100+ Publications",
-                "GeroScience",
-                {"Alzheimer's & Dementia": "Alzheimer's & Dementia"},
-                "Buck Institute",
-              ].map((item) => {
-                const label = typeof item === "string" ? item : Object.values(item)[0]
-                return (
-                  <span
-                    key={label}
-                    className="text-xs font-medium uppercase tracking-wider text-primary-foreground/60"
-                  >
-                    {label}
-                  </span>
-                )
-              })}
-            </div>
+
           </div>
 
           {/* Headshot */}
