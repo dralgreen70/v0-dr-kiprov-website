@@ -12,6 +12,7 @@ const studies = [
     citation:
       "Aging (Albany NY). 12, 8790-8819 (2020)",
     highlight: "First human translation of parabiosis research",
+    link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/jca.21286",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const studies = [
     citation:
       "Alzheimer's and Dementia: June 4, 2020. DOI:10.1002/alz.12137",
     highlight: "52-71% slowing of Alzheimer's progression",
+    link: "https://pubmed.ncbi.nlm.nih.gov/32715623/",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ const studies = [
     citation:
       "GeroScience 44, 2701-2720 (2022). doi:10.1007/s11357-022-00645-w",
     highlight: "First proof: TPE reduces biological age by 1-3 years",
+    link: "https://pubmed.ncbi.nlm.nih.gov/35999337/",
   },
   {
     id: 4,
@@ -48,6 +51,7 @@ const studies = [
     citation:
       "Aging Cell. 2025 Aug;24(8):e70103. doi:10.1111/acel.70103",
     highlight: "Buck Institute partnership - placebo-controlled RCT",
+    link: "https://pubmed.ncbi.nlm.nih.gov/40424097/",
   },
 ]
 
@@ -105,9 +109,14 @@ export function ResearchSection() {
               </div>
 
               <div className="mt-4">
-                <span className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors group-hover:underline">
+                <a
+                  href={study.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:underline"
+                >
                   Read Publication <ExternalLink className="h-3.5 w-3.5" />
-                </span>
+                </a>
               </div>
             </article>
           ))}
