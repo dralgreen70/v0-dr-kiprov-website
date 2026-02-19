@@ -171,12 +171,10 @@ export function PublicationsSection() {
 
         <div className="mt-10 text-center">
           <a
-            href="https://www.dobrikiprov.com/publications"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:underline"
+            href="/full-bibliography"
+            className="inline-flex items-center gap-2 rounded-lg border border-accent/30 bg-accent/5 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/10"
           >
-            View All 100+ Publications
+            View Complete Bibliography (100+ Publications)
             <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
