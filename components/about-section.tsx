@@ -31,10 +31,30 @@ export function AboutSection() {
                 increasingly filled with unproven approaches and exaggerated
                 claims.
               </p>
-              <p>
-                Without rigorous clinical protocols, patients face unnecessary
-                risk and may not receive the evidence-based treatment that
-                published research supports.
+
+              <h4 className="font-serif text-lg font-semibold text-card-foreground pt-2">
+                The Risks of Inadequate Training
+              </h4>
+              <ul className="space-y-3">
+                {[
+                  "Practitioners performing procedures without formal apheresis certification",
+                  "Lack of understanding of proper anticoagulation protocols",
+                  "Inadequate patient screening and contraindication knowledge",
+                  "Missing safety monitoring and adverse event management",
+                  "Exaggerated claims not supported by published research",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-destructive" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="pt-2">
+                Without decades of clinical experience and published research to
+                guide treatment protocols, patients are essentially
+                participating in uncontrolled experiments—paying premium prices
+                for procedures that may not follow evidence-based guidelines.
               </p>
             </div>
           </div>
@@ -57,7 +77,10 @@ export function AboutSection() {
                 Immunopathology at Massachusetts General Hospital and Harvard
                 Medical School (NIH-sponsored) and became the first physician in
                 the United States to pass the Hemapheresis Practitioner Exam
-                (ASCP). He served two terms on the American Society for
+                (ASCP). He serves on the Board of Directors of the International
+                Society for Apheresis and holds the position of Chief of the
+                Division of Immunotherapy, Emeritus at California Pacific
+                Medical Center. He served two terms on the American Society for
                 Apheresis (ASFA) Board of Directors and created the first ASFA
                 educational video program. He is the recipient of three major
                 ASFA honors: the Presidential Award for pioneering work and

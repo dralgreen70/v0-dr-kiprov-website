@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main>
+      <main role="main">
         <HeroSection />
         <ResearchSection />
         <AboutSection />
