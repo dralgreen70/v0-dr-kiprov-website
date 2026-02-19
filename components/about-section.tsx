@@ -1,4 +1,4 @@
-import { AlertTriangle, CheckCircle } from "lucide-react"
+import { AlertTriangle, CheckCircle, MapPin, FlaskConical, Globe } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -55,14 +55,72 @@ export function AboutSection() {
                 more than 40 years and has published extensively on the subject.
                 He served two terms on the American Society for Apheresis (ASFA)
                 Board of Directors and created the first ASFA educational video
-                program.
+                program. He is the recipient of the ASFA Presidential Award, the
+                ASFA Lecturers Award, and the Francis Morrison Memorial Award.
               </p>
+            </div>
+
+            {/* Timeline */}
+            <div className="mt-8">
+              <h4 className="font-serif text-lg font-semibold text-card-foreground">
+                Building the Infrastructure of Modern Apheresis
+              </h4>
+              <div className="mt-5 space-y-0">
+                {[
+                  {
+                    year: "1985",
+                    icon: MapPin,
+                    title: "Founded Bay Area Mobile Apheresis",
+                    description:
+                      "First mobile therapeutic apheresis program in the United States",
+                  },
+                  {
+                    year: "1992",
+                    icon: FlaskConical,
+                    title: "Founded Center for Apheresis and Immunology",
+                    description:
+                      "Advanced clinical protocols and physician training",
+                  },
+                  {
+                    year: "2021",
+                    icon: Globe,
+                    title: "Founded Global Apheresis",
+                    description:
+                      "Evidence-based therapeutic apheresis network",
+                  },
+                ].map((item, index) => (
+                  <div key={item.year} className="relative flex gap-4">
+                    {/* Vertical connector line */}
+                    <div className="flex flex-col items-center">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-accent bg-accent/10">
+                        <item.icon className="h-4 w-4 text-accent" />
+                      </div>
+                      {index < 2 && (
+                        <div className="w-px flex-1 bg-border" />
+                      )}
+                    </div>
+                    <div className="pb-6">
+                      <p className="text-xs font-bold uppercase tracking-wider text-accent">
+                        {item.year}
+                      </p>
+                      <p className="mt-0.5 text-sm font-semibold text-card-foreground">
+                        {item.title}
+                      </p>
+                      <p className="mt-0.5 text-sm text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-2 text-base leading-relaxed text-muted-foreground">
               <p>
-                He is the recipient of the ASFA Presidential Award, the ASFA
-                Lecturers Award, and the Francis Morrison Memorial Award. He
-                trained most physicians currently practicing TPE. He and his
-                team represent true expertise in evidence-based therapeutic
-                apheresis.
+                Many of {"today's"} practitioners learned therapeutic apheresis in
+                programs Dr. Kiprov created. He and his team represent true
+                expertise in evidence-based therapeutic {"apheresis\u2014combining"} decades
+                of clinical practice with rigorous published research.
               </p>
             </div>
 
