@@ -16,11 +16,11 @@ export function HeroSection() {
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-primary-foreground/80 lg:text-xl text-pretty">
               The pioneer who proved therapeutic plasma exchange can reverse
-              biological age and slow disease progression. Former President of
-              the American Society for Apheresis and author of 100+
-              peer-reviewed publications. His research has established the
-              protocols and trained most physicians practicing therapeutic
-              apheresis today.
+              biological age and slow disease progression. Founding member of
+              the American Society for Apheresis (ASFA) and The Journal of
+              Clinical Apheresis, and author of 100+ peer-reviewed
+              publications. His research has established the protocols and
+              trained most physicians practicing therapeutic apheresis today.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:items-start">

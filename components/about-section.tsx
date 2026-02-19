@@ -77,7 +77,10 @@ export function AboutSection() {
                 Immunopathology at Massachusetts General Hospital and Harvard
                 Medical School (NIH-sponsored) and became the first physician in
                 the United States to pass the Hemapheresis Practitioner Exam
-                (ASCP). He served two terms on the American Society for
+                (ASCP). He serves on the Board of Directors of the International
+                Society for Apheresis and holds the position of Chief of the
+                Division of Immunotherapy, Emeritus at California Pacific
+                Medical Center. He served two terms on the American Society for
                 Apheresis (ASFA) Board of Directors and created the first ASFA
                 educational video program. He is the recipient of three major
                 ASFA honors: the Presidential Award for pioneering work and
