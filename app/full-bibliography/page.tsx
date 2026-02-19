@@ -407,7 +407,7 @@ export default function FullBibliographyPage() {
                   Request Complete CV
                 </a>
                 <a
-                  href="https://www.globalapheresis.com/contact"
+                  href="https://www.globalapheresis.com/free-consultation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
@@ -500,7 +500,7 @@ export default function FullBibliographyPage() {
               <ul className="mt-4 space-y-2">
                 <li>
                   <a
-                    href="https://www.globalapheresis.com/contact"
+                    href="https://www.globalapheresis.com/free-consultation"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"

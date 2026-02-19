@@ -38,7 +38,7 @@ export function BibliographyNav() {
             </Link>
           ))}
           <a
-            href="https://www.globalapheresis.com/contact"
+            href="https://www.globalapheresis.com/free-consultation"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-navy-light"
@@ -77,7 +77,7 @@ export function BibliographyNav() {
               </Link>
             ))}
             <a
-              href="https://www.globalapheresis.com/contact"
+              href="https://www.globalapheresis.com/free-consultation"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 rounded-lg bg-primary px-5 py-3 text-center text-sm font-medium text-primary-foreground transition-colors hover:bg-navy-light"

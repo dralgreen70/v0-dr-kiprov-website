@@ -25,7 +25,7 @@ export function HeroSection() {
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
               <a
-                href="https://www.globalapheresis.com/contact"
+                href="https://www.globalapheresis.com/free-consultation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground transition-all hover:brightness-110"

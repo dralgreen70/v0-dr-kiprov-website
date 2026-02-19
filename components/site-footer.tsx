@@ -14,7 +14,7 @@ const navSections = [
     title: "Connect",
     links: [
       { label: "Global Apheresis", href: "https://www.globalapheresis.com", external: true },
-      { label: "Schedule Consultation", href: "https://www.globalapheresis.com/contact", external: true },
+      { label: "Schedule Consultation", href: "https://www.globalapheresis.com/free-consultation", external: true },
       { label: "Affiliate Program", href: "#affiliate" },
     ],
   },
