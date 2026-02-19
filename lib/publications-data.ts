@@ -72,6 +72,29 @@ export const publications: Publication[] = [
     note: "First hypothesis paper on TPE and aging",
     category: "Biological Aging & Longevity",
   },
+  {
+    title:
+      "Attenuation of Age-Elevated Blood Factors by Repositioning Plasmapheresis: A Novel Perspective and Approach",
+    authors:
+      "Mehdipour M, Etienne J, Liu C, Mehdipour T, Kato C, Conboy M, Conboy I, Kiprov DD",
+    journal: "Transfus Apher Sci. 2021 Jun;60(3):103162",
+    year: 2021,
+    doi: "10.1016/j.transci.2021.103162",
+    summary:
+      "Proposed a novel perspective on using plasmapheresis to attenuate age-elevated blood factors, repositioning an established clinical technique as an anti-aging intervention.",
+    category: "Biological Aging & Longevity",
+  },
+  {
+    title:
+      "Therapeutic Plasma Exchange (TPE) and Blood Products - Implications for Longevity and Disease",
+    authors: "Kiprov D",
+    journal: "Transfus Apher Sci. 2021 Jun;60(3):103163",
+    year: 2021,
+    doi: "10.1016/j.transci.2021.103163",
+    summary:
+      "Review of therapeutic plasma exchange and blood product implications for longevity, presenting the theoretical and clinical framework for TPE as a longevity intervention.",
+    category: "Biological Aging & Longevity",
+  },
 
   // ── ALZHEIMER'S DISEASE & NEURODEGENERATION ─────────────────────
   {
@@ -85,6 +108,30 @@ export const publications: Publication[] = [
     summary:
       "Randomized controlled clinical trial demonstrating 52-71% slowing of Alzheimer's disease progression with plasma exchange and albumin replacement - superior effect size to FDA-approved monoclonal antibodies with better safety profile.",
     note: "52-71% slowing of disease progression",
+    category: "Alzheimer's Disease & Neurodegeneration",
+  },
+  {
+    title:
+      "Feasibility, Safety, and Tolerability of Two Modalities of Plasma Exchange with Albumin Replacement to Treat Elderly Patients with Alzheimer's Disease in the AMBAR Study",
+    authors:
+      "Boada M, Kiprov D, Anaya F, Lopez OL, Nunez L, Olazaran J, Lima J, Grifols C, Barcelo M, Rohe R, Prieto-Fernandez C, Szczepiorkowski ZM, Paez A",
+    journal: "J Clin Apher. 2023 Feb;38(1):45-54",
+    year: 2023,
+    doi: "10.1002/jca.22026",
+    summary:
+      "Demonstrated the feasibility, safety, and tolerability of two different plasma exchange modalities with albumin replacement for treating elderly Alzheimer's patients in the AMBAR clinical trial.",
+    category: "Alzheimer's Disease & Neurodegeneration",
+  },
+  {
+    title:
+      "Neuropsychological, Neuropsychiatric, and Quality-of-Life Assessments in Alzheimer's Disease Patients Treated with Plasma Exchange with Albumin Replacement from the Randomized AMBAR Study",
+    authors:
+      "Boada M, Lopez OL, Olazaran J, Nunez L, Pfeffer M, Puente O, Pinol-Ripoll G, Gamez JE, Anaya F, Kiprov D, Alegret M, Grifols C, Barcelo M, Bozzo J, Szczepiorkowski ZM, Paez A; AMBAR Trial Group",
+    journal: "Alzheimers Dement. 2022 Jul;18(7):1314-1324",
+    year: 2022,
+    doi: "10.1002/alz.12477",
+    summary:
+      "Comprehensive assessment of neuropsychological, neuropsychiatric, and quality-of-life outcomes in Alzheimer's patients treated with plasma exchange and albumin replacement in the randomized AMBAR study.",
     category: "Alzheimer's Disease & Neurodegeneration",
   },
 
