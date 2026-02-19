@@ -231,7 +231,7 @@ export default function FullBibliographyPage() {
             <p className="mt-4 text-base leading-relaxed text-muted-foreground/80 max-w-2xl">
               {"Dr. Kiprov's"} research spans biological aging, {"Alzheimer's"}{" "}
               disease, autoimmune conditions, fertility, and the fundamental
-              science of therapeutic plasma exchange. This page features his most
+              science of therapeutic apheresis. This page features his most
               significant peer-reviewed publications from a career spanning over
               100 scholarly works. For a complete CV including all publications,
               abstracts, conference proceedings, and book chapters, please
