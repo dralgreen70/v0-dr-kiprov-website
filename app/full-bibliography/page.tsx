@@ -103,6 +103,8 @@ function PublicationCard({
 }
 
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
+  "Immunotherapy & IVIG Protocols":
+    "Dr. Kiprov was among the first physicians in the United States to complete formal fellowship training in Clinical Immunology and Immunopathology at Massachusetts General Hospital, sponsored by the NIH. His pioneering work with intravenous immunoglobulin (IVIG) therapy spans multiple decades and disease states, including early trials of cell therapies including CAR-T cell therapies and cell vaccines. His research combining IVIG with therapeutic plasma exchange has demonstrated superior outcomes across multiple conditions. Most notably, the Buck Institute study (2025) showed that TPE combined with IVIG produced the greatest biological age reduction, validating decades of his clinical experience with combination immunotherapy approaches.",
   "Early Career & Foundational Work":
     "During the 1980s through 2010s, Dr. Kiprov published extensively on autoimmune disease, HIV-related conditions, immunology, and fundamental apheresis protocols. This work established core principles that remain foundational to therapeutic apheresis practice today.",
 }

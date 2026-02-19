@@ -14,6 +14,7 @@ export const CATEGORIES = [
   "Alzheimer's Disease & Neurodegeneration",
   "COVID-19 & Post-Acute Sequelae",
   "Autoimmune & Immunological Conditions",
+  "Immunotherapy & IVIG Protocols",
   "Therapeutic Apheresis Protocols & Safety",
   "Early Career & Foundational Work",
 ] as const
@@ -222,6 +223,92 @@ export const publications: Publication[] = [
       "Experiments suggesting that alloimmunization may prevent AIDS.",
     note: "Published in Science",
     category: "Autoimmune & Immunological Conditions",
+  },
+
+  // ── IMMUNOTHERAPY & IVIG PROTOCOLS ──────────────────────────────
+  {
+    title:
+      "Response to Plasmapheresis Following Failure of Intravenous Gammaglobulin in Patients with Myasthenia Gravis and Guillain-Barre Syndrome",
+    authors: "Stricker R, Kwiatkowska B, Habis J, MacLeod D, Kiprov D",
+    journal: "Journal of Clinical Apheresis, Vol 8, No 1, 1993",
+    year: 1993,
+    summary:
+      "Demonstrated that patients who failed to respond to IVIG therapy could be successfully rescued with plasmapheresis, establishing combination therapy protocols still used today.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title:
+      "Treatment of HIV Neuropathy with Plasmapheresis and Intravenous Gammaglobulin",
+    authors: "Kiprov D",
+    journal:
+      "Therapeutic Plasmapheresis (XII), pp. 277-282, T. Agishi et al (Eds), VSP 1993",
+    year: 1993,
+    summary:
+      "Early pioneering work combining plasmapheresis with IVIG for treating antibody-mediated peripheral neuropathy in HIV-positive patients.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title:
+      "New Trends in Immunotherapy - Intravenous Gammaglobulin (IVIG)",
+    authors: "Kiprov D",
+    journal: "J. Clinical Apheresis, 1993",
+    year: 1993,
+    summary:
+      "Review article examining emerging applications of IVIG therapy and its role in immunomodulation across multiple disease states.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title:
+      "Intravenous Gammaglobulin (IVIG) Treatment of Recurrent Spontaneous Abortion Associated with Combined Alloimmune and Autoimmune Abnormalities",
+    authors:
+      "Kiprov D, Stricker R, Nachtigall R, Main E, Smith S, Dumlao C, Jacobson A, Garovoy M, Levinson C",
+    journal: "J Immunol Immunopharmocology, 12:108, 1992",
+    year: 1992,
+    summary:
+      "Groundbreaking application of IVIG in reproductive immunology, demonstrating efficacy for immune-mediated recurrent pregnancy loss.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title:
+      "Intravenous Immunoglobulin for In-Vitro Fertilization Failure in Patients with Autoimmune Abnormalities",
+    authors: "Kiprov D, Weckstein L, Jacobson A, Galen D, Weaver R",
+    journal: "Am J Reprod Immune, 1996",
+    year: 1996,
+    summary:
+      "Extended IVIG applications to IVF failure in patients with autoimmune markers, expanding understanding of immune factors in reproductive medicine.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title:
+      "The Use of Intravenous Immunoglobulin in Recurrent Pregnancy Loss Associated with Combined Alloimmune and Autoimmune Abnormalities",
+    authors:
+      "Kiprov DD, Nachtigall RD, Weaver RC, Jacobson A, Main EK, Garovoy MR",
+    journal:
+      "Am J Reprod Immunol. 1996 Oct;36(4):228-34",
+    year: 1996,
+    doi: "10.1111/j.1600-0897.1996.tb00168.x",
+    summary:
+      "Clinical study demonstrating the efficacy of IVIG for treating recurrent pregnancy loss in patients with combined alloimmune and autoimmune abnormalities.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title:
+      "Autoimmune Retinopathy: Treatment with Plasma Exchange and/or Intravenous Immunoglobulin",
+    authors: "Hofmann J, Kiprov D",
+    journal: "Journal of Clinical Apheresis, 21:20-21, 2006",
+    year: 2006,
+    summary:
+      "Demonstrated efficacy of combined immunotherapy approaches for treating autoimmune retinopathy, a rare and challenging condition.",
+    category: "Immunotherapy & IVIG Protocols",
+  },
+  {
+    title: "Myasthenic Crisis",
+    authors: "Stricker R, Kwiatkowska B, Kiprov D",
+    journal: "Arch Neurol, Vol 50:1:8, 1993",
+    year: 1993,
+    summary:
+      "Clinical protocols for managing myasthenic crisis using combination IVIG and plasmapheresis approaches.",
+    category: "Immunotherapy & IVIG Protocols",
   },
 
   // ── THERAPEUTIC APHERESIS PROTOCOLS & SAFETY ────────────────────
