@@ -147,7 +147,8 @@ export function AboutSection() {
             <div className="mt-2 text-base leading-relaxed text-muted-foreground">
               <p>
                 Many of {"today's"} practitioners learned therapeutic apheresis in
-                programs Dr. Kiprov created. He and his team represent true
+                programs Dr. Kiprov created. He and his team, including{" "}
+                <a href="https://allenpgreenmd.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-primary">Dr. Allen Green</a>, represent true
                 expertise in evidence-based therapeutic {"apheresis\u2014combining"} decades
                 of clinical practice with rigorous published research.
               </p>
