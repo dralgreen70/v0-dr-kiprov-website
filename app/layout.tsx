@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     'preventative medicine',
     'Global Apheresis',
   ],
+  verification: {
+    google: 'UVG2iyrjWaBFDSJ0Z9dyCYVMQlZcsH_vzPwDA1Psuk0',
+  },
   icons: {
     icon: [
       {
