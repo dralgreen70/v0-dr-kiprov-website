@@ -400,7 +400,7 @@ export default function FullBibliographyPage() {
               </p>
               <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                 <a
-                  href="mailto:info@globalapheresis.com?subject=Request%20for%20Complete%20CV"
+                  href="mailto:DK@globalapheresis.com?subject=Request%20for%20Complete%20CV"
                   className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-navy-light"
                 >
                   <Mail className="h-4 w-4" />
@@ -452,10 +452,10 @@ export default function FullBibliographyPage() {
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-accent" />
                   <a
-                    href="mailto:info@globalapheresis.com"
+                    href="mailto:DK@globalapheresis.com"
                     className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
                   >
-                    info@globalapheresis.com
+                    DK@globalapheresis.com
                   </a>
                 </div>
               </div>

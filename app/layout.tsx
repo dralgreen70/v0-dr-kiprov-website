@@ -14,9 +14,10 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.dobrikiprov.com'),
   title: 'Dr. Dobri Kiprov, M.D. | Pioneer in Therapeutic Plasma Exchange',
   description:
-    'Dr. Dobri Kiprov is the leading authority in therapeutic plasma exchange for age-related disease, Alzheimer\'s, and long COVID. 40+ years of published research, 100+ peer-reviewed publications. Schedule a consultation.',
+    'Dr. Dobri Kiprov - Pioneer in therapeutic plasma exchange with 40+ years of research. Founding member of ASFA, 100+ publications on therapeutic apheresis, immunology, longevity medicine, and biological age reversal.',
   keywords: [
     'therapeutic plasma exchange',
     'Dr. Dobri Kiprov',
@@ -29,6 +30,25 @@ export const metadata: Metadata = {
   ],
   verification: {
     google: 'UVG2iyrjWaBFDSJ0Z9dyCYVMQlZcsH_vzPwDA1Psuk0',
+  },
+  openGraph: {
+    title: 'Dr. Dobri Kiprov - 40 Years of Therapeutic Plasma Exchange Research',
+    description:
+      'Pioneer in therapeutic plasma exchange with 40+ years of research. Founding member of ASFA, 100+ publications on therapeutic apheresis, immunology, and longevity medicine.',
+    type: 'website',
+    url: 'https://dobrikiprov.com',
+    images: [
+      {
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dr.%20Kiprov%20Headshot%20from%20his%20site-i84KUVGfGymdPHVCCFIBxYJXf9mC7C.jpg',
+        alt: 'Dr. Dobri Kiprov',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dr. Dobri Kiprov - Therapeutic Plasma Exchange Pioneer',
+    description:
+      '40 years of published research in therapeutic plasma exchange, immunology, longevity medicine, and biological age reversal.',
   },
   icons: {
     icon: [
@@ -69,6 +89,66 @@ export default function RootLayout({
             gtag('config', 'G-S925LG7WFF');
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Dobri Kiprov',
+              honorificPrefix: 'Dr.',
+              jobTitle: 'Founder & Medical Director',
+              worksFor: {
+                '@type': 'Organization',
+                name: 'Global Apheresis',
+              },
+              alumniOf: [
+                { '@type': 'Organization', name: 'Harvard Medical School' },
+                { '@type': 'Organization', name: 'Massachusetts General Hospital' },
+              ],
+              award: [
+                'American Society for Apheresis Presidential Award',
+                'ASFA Lecturers Award',
+                'Francis Morrison Memorial Award',
+              ],
+              knowsAbout: [
+                'Therapeutic Plasma Exchange',
+                'Therapeutic Apheresis',
+                'Biological Age Reversal',
+                'Longevity Medicine',
+                'Immunotherapy',
+              ],
+              url: 'https://dobrikiprov.com',
+              sameAs: [
+                'https://www.linkedin.com/in/dobrikiprov',
+                'https://www.youtube.com/@globalapheresis',
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'MedicalBusiness',
+              name: 'Global Apheresis',
+              url: 'https://globalapheresis.com',
+              founder: {
+                '@type': 'Person',
+                name: 'Dobri Kiprov',
+              },
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '655 Redwood Highway, Suite 370',
+                addressLocality: 'Mill Valley',
+                addressRegion: 'CA',
+                postalCode: '94941',
+              },
+              medicalSpecialty: 'Therapeutic Apheresis',
+            }),
+          }}
+        />
       </head>
       <body className="font-sans antialiased" suppressHydrationWarning>
         {children}

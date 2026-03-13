@@ -62,10 +62,10 @@ export function SiteFooter() {
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
                 <a
-                  href="mailto:info@globalapheresis.com"
+                  href="mailto:DK@globalapheresis.com"
                   className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
                 >
-                  info@globalapheresis.com
+                  DK@globalapheresis.com
                 </a>
               </div>
             </div>
