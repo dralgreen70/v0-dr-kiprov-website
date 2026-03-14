@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     'preventative medicine',
     'Global Apheresis',
   ],
+  alternates: {
+    canonical: 'https://dobrikiprov.com/',
+  },
   verification: {
     google: 'UVG2iyrjWaBFDSJ0Z9dyCYVMQlZcsH_vzPwDA1Psuk0',
   },
