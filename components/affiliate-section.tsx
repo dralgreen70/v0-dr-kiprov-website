@@ -62,7 +62,7 @@ export function AffiliateSection() {
 
         <div className="mt-14 text-center">
           <a
-            href="https://globalapheresis.com/free-consultation"
+            href="https://www.globalapheresis.com/affiliates"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-colors hover:bg-navy-light"
