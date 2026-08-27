@@ -13,6 +13,7 @@ const navLinks = [
 
 const publicationsDropdown = [
   { label: "Featured Research", href: "#publications" },
+  { label: "2026 Theme Issue", href: "#theme-issue" },
   { label: "Complete Bibliography", href: "/full-bibliography" },
 ]
 

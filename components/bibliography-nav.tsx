@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Global Apheresis", href: "/#practice" },
   { label: "Media", href: "/#media" },
   { label: "Publications", href: "/#publications" },
+  { label: "2026 Theme Issue", href: "/#theme-issue" },
   { label: "For Physicians", href: "/#affiliate" },
 ]
 

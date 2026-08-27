@@ -361,6 +361,30 @@ export const publications: Publication[] = [
   // ── THERAPEUTIC APHERESIS PROTOCOLS & SAFETY ────────────────────
   {
     title:
+      "Technological advances in selective plasma adsorption: The MTx.100 column and the emergence of subtractive precision medicine",
+    authors: "Kiprov DD, Green AP, Boyinapalli P",
+    journal: "Transfusion and Apheresis Science. 2026;65(4):104484",
+    year: 2026,
+    doi: "10.1016/j.transci.2026.104484",
+    summary:
+      "Reviews the MTx.100 selective plasma adsorption column, which targets pro-inflammatory cytokines, protein-bound metabolic waste, and environmental contaminants while preserving immunoglobulins, coagulation factors, and albumin — returning the patient's own plasma and eliminating replacement-fluid dependency. Draws on approximately 1,000 procedures globally, including a prospective multicenter trial in 107 critically ill COVID-19 patients.",
+    note: "2026 theme issue - guest-edited by Dr. Kiprov",
+    category: "Therapeutic Apheresis Protocols & Safety",
+  },
+  {
+    title:
+      "Therapeutic apheresis in transition: New indications and the emergence of precision apheresis",
+    authors: "Green AP, Kiprov DD",
+    journal: "Transfusion and Apheresis Science. 2026;65(4):104480",
+    year: 2026,
+    doi: "10.1016/j.transci.2026.104480",
+    summary:
+      "The guest editors' opening editorial for the theme issue, framing the field's shift from non-selective plasma exchange toward the selective extraction of specific pathogenic components — a transition from apheresis as a rescue intervention toward precision apheresis.",
+    note: "Editorial - guest editor, 2026 theme issue",
+    category: "Therapeutic Apheresis Protocols & Safety",
+  },
+  {
+    title:
       "Adverse Reactions Associated with Mobile Therapeutic Apheresis: Analysis of 17,940 Procedures",
     authors:
       "Kiprov DD, Golden P, Rohe R, Smith S, Hofmann J, Hunnicutt J",
